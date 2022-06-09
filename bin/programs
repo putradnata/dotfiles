@@ -41,9 +41,15 @@ sh $HOME/.config/bspwm/bin/dunst &
 # Compositor
 sh $HOME/.config/bspwm/bin/compositor &
 
-# conky
-conky -c $HOME/.config/bspwm/conky/conkyrc
-
 # Start mpd
 exec mpd &
 exec mpDris2 &
+
+#email client
+bluemail &
+
+#autorandr
+autorandr -c &
+
+# conky
+conky -c $HOME/.config/bspwm/conky/conkyrc &
